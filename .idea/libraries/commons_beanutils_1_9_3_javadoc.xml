@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.9.3-javadoc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commons-codec-1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commons-collections-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commons-collections4-4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/curvesapi-1.04.jar!/" />
+      <root url="jar://$PROJECT_DIR$/itext5-itextpdf-5.5.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jasperreports-6.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfoenix.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JFXMaterial.jar!/" />
+      <root url="jar://$PROJECT_DIR$/JFXMaterialDemo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-java-5.1.17-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mysql-connector-java-8.0.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.5-FINAL.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-3.16-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-examples-3.16-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-excelant-3.16-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-ooxml-3.16-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-ooxml-schemas-3.16-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-scratchpad-3.16-beta2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/xmlbeans-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/commons-beanutils-1.9.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
