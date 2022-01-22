@@ -23,8 +23,8 @@ public class Login extends Application{
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
 		primaryStage.setMaximized(false);
-		primaryStage.setTitle("Tyler's POS System");
-		primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));
+		primaryStage.setTitle("Tesbious Technologies");
+		/*primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));*/
 		primaryStage.show();
 		
 	}
