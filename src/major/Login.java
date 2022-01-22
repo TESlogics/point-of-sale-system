@@ -24,7 +24,7 @@ public class Login extends Application{
 		primaryStage.setResizable(false);
 		primaryStage.setMaximized(false);
 		primaryStage.setTitle("Tesbious Technologies");
-		/*primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));*/
+		primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));
 		primaryStage.show();
 		
 	}

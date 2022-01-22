@@ -250,7 +250,7 @@ public class LoginController{
 				primaryStage.setTitle("Cashier Panel");
 				//primaryStage.sizeToScene();
 				primaryStage.setResizable(false);
-				/*primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));*/
+				primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));
 				primaryStage.setMaximized(false);
 				primaryStage.show();
 		    }
@@ -271,7 +271,7 @@ public class LoginController{
 				primaryStage.setTitle("Admin Panel");
 				//primaryStage.sizeToScene();
 				primaryStage.setResizable(false);
-				/*primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));*/
+				primaryStage.getIcons().add(new Image("graphic/poslogorect.png"));
 				primaryStage.setMaximized(false);
 				primaryStage.show();
 		    }
