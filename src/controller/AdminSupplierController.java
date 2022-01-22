@@ -238,9 +238,21 @@ public class AdminSupplierController {
 
 		});
 
+		tb_supplier.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+			if(newValue != null){
+				setSupplierData(newValue);
+			}
+		});
+
 	}
 
-	 @FXML
+	private void setSupplierData(Supplier newValue) {
+		tf_id.setText(newValue.getId());
+		tf_name.setText(newValue.getName());
+		tf_supplied_date.setText(newValue.getLastSupplied());
+	}
+
+	@FXML
 	    void onNewAction(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
 
 		 	tf_id.clear();

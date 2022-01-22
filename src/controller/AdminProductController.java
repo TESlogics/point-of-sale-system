@@ -326,6 +326,24 @@ public class AdminProductController {
 			return row;
 
 		});
+
+		tb_product_item.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+			if(newValue != null){
+				setProductData(newValue);
+			}
+		});
+
+	}
+
+	private void setProductData(ProductItem newValue) {
+		tf_barcode.setText(newValue.getBarcode());
+		tf_name.setText(newValue.getName());
+		cbo_category.setValue(newValue.getCategoryname());
+		tf_price.setText(newValue.getPrice());
+		cbo_supplier.setValue(newValue.getSuppliername());
+		tf_date_added.setText(newValue.getDateadded());
+		tf_stock.setText(newValue.getStockamount());
+		tf_expired_date.setText(newValue.getExpiredate());
 	}
 
 	@FXML

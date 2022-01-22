@@ -143,6 +143,17 @@ public class AdminCardController {
     		
 		});
 
+		tb_card.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+			if(newValue != null){
+				setCardData(newValue);
+			}
+		});
+
+	}
+
+	private void setCardData(CardUser newValue) {
+		tf_card_no.setText(newValue.getCardno());
+		tf_pin.setText(newValue.getPin());
 	}
 
 	@FXML

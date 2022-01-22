@@ -245,6 +245,20 @@ public class AdminPromotionController {
 
 		});
 
+		tb_promo.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+			if(newValue != null){
+				setPromoData(newValue);
+			}
+		});
+
+	}
+
+	private void setPromoData(Promotion newValue) {
+		tf_id.setText(newValue.getId());
+		tf_name.setText(newValue.getName());
+		tf_product_id.setText(newValue.getProductId());
+		tf_product_name.setText(newValue.getProductName());
+		tf_percentage.setText(newValue.getPercentage());
 	}
 
 	@FXML

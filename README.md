@@ -54,65 +54,65 @@ mysql> set @@global.show_compatibility_56=ON;
 
 # Barcode/QRcode scanner
 - We developed Barcode/QR code scanner android app that scans the Barcode/QRcode from the item and sent that code to the computer via TCP. You can find the android app repository here : https://github.com/hanlinag/pos-barcode-scanner.git 
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/barcode.png?raw=true)
+![alt text](images/home.png)
 
 # Diagrams
 System flowchart (Admin)
-![alt text](https://raw.githubusercontent.com/hanlinag/point-of-sale-system/master/images/adminflowchart.png)
+![alt text](images/adminflowchart.png)
 
 System flowchart (Cashier)
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/cashierflowchart.png?raw=true)
+![alt text](images/cashierflowchart.png?raw=true)
 
 Usecase Diagram
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/ucscasefinal.png?raw=true)
+![alt text](images/ucscasefinal.png?raw=true)
 
 
 ER Diagram
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/ER%20Final.png?raw=true)
+![alt text](images/ER%20Final.png?raw=true)
 
 <hr>
 
 # Screenshots
 Home Screen
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/home.png?raw=true)
+![alt text](images/home.png?raw=true)
 
 Cashier Panel
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/cashier.png?raw=true)
+![alt text](images/cashier.png?raw=true)
 
 Card Payment
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/cardpayment.png?raw=true)
+![alt text](images/cardpayment.png?raw=true)
 
 Admin Panel
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/admin.png?raw=true)
+![alt text](images/admin.png?raw=true)
 
 Chart View
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/chart.png?raw=true)
+![alt text](images/chart.png?raw=true)
 
 
 <hr>
 
 # Report Samples
 Voucher Sample
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/voucher.png?raw=true)
+![alt text](images/voucher.png?raw=true)
 
 Daily Report Sample
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/dailysale.png?raw=true)
+![alt text](images/dailysale.png?raw=true)
 
 Monthly Report Sample
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/monthlysale.png?raw=true)
+![alt text](images/monthlysale.png?raw=true)
 
 Popular Item Sample
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/popularitem.png?raw=true) 
+![alt text](images/popularitem.png?raw=true) 
 
 
 <hr>
 
 # Gift Card Design
 Front side
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/cardfinalfront.png?raw=true)
+![alt text](images/cardfinalfront.png?raw=true)
 
 Back side
-![alt text](https://github.com/hanlinag/point-of-sale-system/blob/master/images/cardfinalback.png?raw=true)
+![alt text](images/cardfinalback.png?raw=true)
 <hr>
 
 # Conclusion

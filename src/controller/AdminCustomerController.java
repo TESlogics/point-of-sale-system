@@ -372,6 +372,27 @@ public class AdminCustomerController {
 
 		});
 
+		tb_customer.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+			if(newValue != null){
+				setCustomerData(newValue);
+			}
+		});
+
+	}
+
+	private void setCustomerData(CardUser newValue) {
+		tf_id.setText(newValue.getCustomrid());
+		tf_name.setText(newValue.getName());
+		tf_addr.setText(newValue.getAddress());
+		tf_age.setText(newValue.getAge());
+		tf_amount.setText(newValue.getAmount());
+		tf_card_no.setText(newValue.getCardno());
+		tf_expired_date.setText(newValue.getExpireddate());
+		tf_last_date_used.setText(newValue.getLastdateused());
+		tf_mail.setText(newValue.getEmail());
+		tf_phone.setText(newValue.getPhone());
+		tf_pin.setText(newValue.getPin());
+		tf_date_created.setText(newValue.getRegisterdate());
 	}
 
 	// search card no info

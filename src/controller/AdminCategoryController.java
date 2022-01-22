@@ -284,9 +284,22 @@ public class AdminCategoryController {
     		return row;
     		
     		});
+
+		tb_category.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+			if(newValue != null){
+				setCategoryData(newValue);
+			}
+		});
+
     }
-    
-    @FXML
+
+	private void setCategoryData(Category newValue) {
+    	tf_id.setText(newValue.getId());
+    	tf_name.setText(newValue.getName());
+    	tf_date_created.setText(newValue.getDateCreated());
+	}
+
+	@FXML
     void onbtnewAction(ActionEvent event) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
 	
     	

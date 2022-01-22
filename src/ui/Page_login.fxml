@@ -25,7 +25,7 @@
             <JFXRadioButton fx:id="bt_rdo_cashier" layoutX="266.0" layoutY="399.0" text="Cashier" textFill="#f2f2f2" toggleGroup="$usertype" />
          </children>
       </AnchorPane>
-      <ImageView fitHeight="635.0" fitWidth="648.0" layoutX="85.0" layoutY="43.0" pickOnBounds="true">
+      <ImageView fitHeight="609.0" fitWidth="618.0" layoutX="85.0" layoutY="43.0" pickOnBounds="true">
          <image>
             <Image url="@../graphic/youwa%20logo%20edited.png" />
          </image>
