@@ -354,6 +354,11 @@ public class AdminCashierController {
 		tf_email.setText(newValue.getEmail());
 		tf_password.setText(newValue.getPassword());
 		tf_date_created.setText(newValue.getDateCreated());
+		if((newValue.getGender()).equals("male")){
+			gender.selectToggle(rdo_male);
+		}else {
+			gender.selectToggle(rdo_female);
+		}
 	}
 
 

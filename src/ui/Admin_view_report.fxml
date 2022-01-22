@@ -12,17 +12,17 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <JFXButton fx:id="bt_daily_re" layoutX="391.0" layoutY="125.0" onAction="#onDailyAction" prefHeight="87.0" prefWidth="519.0" style="-fx-background-color: #184589;" text="Generate Daily Report" textFill="WHITE">
+      <JFXButton fx:id="bt_daily_re" layoutX="391.0" layoutY="125.0" onAction="#onDailyAction" prefHeight="87.0" prefWidth="519.0" style="-fx-background-color: #3498db;" text="Generate Daily Report" textFill="WHITE">
          <font>
             <Font size="29.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="bt_month_re" layoutX="391.0" layoutY="230.0" onAction="#onMonthlyAction" prefHeight="87.0" prefWidth="519.0" style="-fx-background-color: #184589;" text="Generate Monthly Report" textFill="WHITE">
+      <JFXButton fx:id="bt_month_re" layoutX="391.0" layoutY="230.0" onAction="#onMonthlyAction" prefHeight="87.0" prefWidth="519.0" style="-fx-background-color: #3498db;" text="Generate Monthly Report" textFill="WHITE">
          <font>
             <Font size="29.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="bt_popu_re" layoutX="390.0" layoutY="336.0" onAction="#onPopularAction" prefHeight="87.0" prefWidth="519.0" style="-fx-background-color: #184589;" text="Generate Popular Item" textFill="WHITE">
+      <JFXButton fx:id="bt_popu_re" layoutX="390.0" layoutY="336.0" onAction="#onPopularAction" prefHeight="87.0" prefWidth="519.0" style="-fx-background-color: #3498db;" text="Generate Popular Item" textFill="WHITE">
          <font>
             <Font size="29.0" />
          </font>

@@ -34,8 +34,8 @@
       <JFXTextField fx:id="tf_password" layoutX="109.0" layoutY="444.0" prefHeight="27.0" prefWidth="197.0" promptText="cashier" />
       <Label layoutX="20.0" layoutY="500.0" text="Date Created" />
       <JFXTextField fx:id="tf_date_created" layoutX="109.0" layoutY="488.0" prefHeight="27.0" prefWidth="197.0" promptText="00/00/0000" />
-      <JFXButton fx:id="bt_new" layoutX="26.0" layoutY="564.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #273a91;" text="New" textFill="WHITE" />
-      <JFXButton fx:id="bt_cashier_add" layoutX="133.0" layoutY="564.0" onAction="#onBtAddAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #273a91;" text="Add" textFill="WHITE" />
-      <JFXButton fx:id="bt_cashier_update" layoutX="247.0" layoutY="564.0" onAction="#onbtUpdateAction" style="-fx-background-color: #273a91;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="bt_new" layoutX="26.0" layoutY="564.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="New" textFill="WHITE" />
+      <JFXButton fx:id="bt_cashier_add" layoutX="133.0" layoutY="564.0" onAction="#onBtAddAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="Add" textFill="WHITE" />
+      <JFXButton fx:id="bt_cashier_update" layoutX="247.0" layoutY="564.0" onAction="#onbtUpdateAction" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
    </children>
 </AnchorPane>

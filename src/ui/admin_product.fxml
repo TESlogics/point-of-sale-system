@@ -24,12 +24,12 @@
       <JFXTextField fx:id="tf_stock" layoutX="112.0" layoutY="460.0" prefHeight="27.0" prefWidth="166.0" promptText="300" />
       <Label layoutX="23.0" layoutY="522.0" text="Expired Date" />
       <JFXTextField fx:id="tf_expired_date" layoutX="112.0" layoutY="506.0" prefHeight="27.0" prefWidth="166.0" promptText="dd/mm/yyyy" />
-      <JFXButton fx:id="bt_add" layoutX="122.0" layoutY="568.0" onAction="#onbtAddAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #273a91;" text="Add" textFill="#fcfafa" />
-      <JFXButton fx:id="bt_update" layoutX="221.0" layoutY="568.0" onAction="#onBtUpdateAction" style="-fx-background-color: #273a91;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="bt_add" layoutX="122.0" layoutY="568.0" onAction="#onbtAddAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="Add" textFill="#fcfafa" />
+      <JFXButton fx:id="bt_update" layoutX="221.0" layoutY="568.0" onAction="#onBtUpdateAction" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
       <Label layoutX="491.0" style="-fx-font-size: 30;" text="Manage Product Items" />
       <JFXComboBox fx:id="cbo_category" layoutX="112.0" layoutY="298.0" prefHeight="27.0" prefWidth="166.0" promptText="Snack" style="-fx-background-color: #ededed;" />
       <JFXComboBox fx:id="cbo_supplier" layoutX="112.0" layoutY="378.0" prefHeight="27.0" prefWidth="166.0" style="-fx-background-color: #ededed;" />
-      <JFXButton fx:id="bt_new" layoutX="27.0" layoutY="568.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #273a91;" text="New" textFill="WHITE" />
+      <JFXButton fx:id="bt_new" layoutX="27.0" layoutY="568.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="New" textFill="WHITE" />
       <JFXTextField fx:id="tf_name_search" layoutX="21.0" layoutY="66.0" onKeyReleased="#onNameSearchAction" prefHeight="27.0" prefWidth="266.0" promptText="Search By Name" />
       <JFXTextField fx:id="tf_barcode_search" layoutX="22.0" layoutY="131.0" onKeyReleased="#onBarcodeSearchActionn" prefHeight="27.0" prefWidth="266.0" promptText="Search By Barcode" />
    </children>

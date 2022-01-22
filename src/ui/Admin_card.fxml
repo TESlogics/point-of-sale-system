@@ -14,7 +14,7 @@
       <Label layoutX="40.0" layoutY="300.0" text="PIN" />
       <JFXTextField fx:id="tf_card_no" layoutX="101.0" layoutY="233.0" prefHeight="27.0" prefWidth="215.0" promptText="777 777 xxx xxx" />
       <JFXTextField fx:id="tf_pin" layoutX="99.0" layoutY="289.0" prefHeight="27.0" prefWidth="215.0" promptText="1234" />
-      <JFXButton fx:id="bt_new" layoutX="99.0" layoutY="399.0" onAction="#onNewAction" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #273a91;" text="New" textFill="WHITE" />
-      <JFXButton fx:id="bt_add" layoutX="219.0" layoutY="399.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #273a91;" text="Add" textFill="WHITE" />
+      <JFXButton fx:id="bt_new" layoutX="99.0" layoutY="399.0" onAction="#onNewAction" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #3498db;" text="New" textFill="WHITE" />
+      <JFXButton fx:id="bt_add" layoutX="219.0" layoutY="399.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #3498db;" text="Add" textFill="WHITE" />
    </children>
 </AnchorPane>

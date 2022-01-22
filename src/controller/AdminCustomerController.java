@@ -393,7 +393,16 @@ public class AdminCustomerController {
 		tf_phone.setText(newValue.getPhone());
 		tf_pin.setText(newValue.getPin());
 		tf_date_created.setText(newValue.getRegisterdate());
+		if((newValue.getGender()).equals("male")){
+			gender.selectToggle(rdo_male);
+		}else {
+			gender.selectToggle(rdo_female);
+		}
 	}
+
+
+
+
 
 	// search card no info
 

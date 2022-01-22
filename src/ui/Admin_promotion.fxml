@@ -22,11 +22,11 @@
       <JFXTextField fx:id="tf_get" alignment="BOTTOM_RIGHT" layoutX="227.0" layoutY="447.0" prefColumnCount="10" prefHeight="27.0" prefWidth="71.0" promptText="0" />
       <Label layoutX="40.0" layoutY="452.0" text="Buy" />
       <Label layoutX="179.0" layoutY="452.0" text="Get" />
-      <JFXButton fx:id="bt_add" layoutX="140.0" layoutY="502.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #273a91;" text="Add" textFill="#f8f8f8" />
-      <JFXButton layoutX="230.0" layoutY="502.0" onAction="#onUpdateAction" style="-fx-background-color: #273a91;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="bt_add" layoutX="140.0" layoutY="502.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #3498db;" text="Add" textFill="#f8f8f8" />
+      <JFXButton layoutX="230.0" layoutY="502.0" onAction="#onUpdateAction" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
       <Label layoutX="30.0" layoutY="390.0" text="Percentage" />
       <JFXTextField fx:id="tf_product_name" layoutX="142.0" layoutY="327.0" prefHeight="27.0" prefWidth="171.0" promptText="Water" />
       <Label layoutX="22.0" layoutY="346.0" text="Product Name" />
-      <JFXButton fx:id="bt_new" layoutX="46.0" layoutY="502.0" onAction="#onNewAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #273a91;" text="New" textFill="WHITE" />
+      <JFXButton fx:id="bt_new" layoutX="46.0" layoutY="502.0" onAction="#onNewAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #3498db;" text="New" textFill="WHITE" />
    </children>
 </AnchorPane>

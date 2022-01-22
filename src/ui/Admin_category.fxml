@@ -16,8 +16,8 @@
       <JFXTextField fx:id="tf_id" layoutX="142.0" layoutY="221.0" promptText="10001" />
       <JFXTextField fx:id="tf_name" layoutX="142.0" layoutY="273.0" promptText="Medicine" />
       <JFXTextField fx:id="tf_date_created" editable="false" layoutX="141.0" layoutY="332.0" promptText="00/00/000" />
-      <JFXButton fx:id="bt_add" layoutX="118.0" layoutY="437.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #273a91;" text="Add" textFill="WHITE" />
-      <JFXButton fx:id="bt_update" layoutX="213.0" layoutY="437.0" onAction="#onUpdateAction" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: #273a91;" text="Update" textFill="WHITE" />
-      <JFXButton fx:id="bt_new" layoutX="31.0" layoutY="437.0" onAction="#onbtnewAction" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #273a91;" text="New" textFill="WHITE" />
+      <JFXButton fx:id="bt_add" layoutX="118.0" layoutY="437.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #3498db;" text="Add" textFill="WHITE" />
+      <JFXButton fx:id="bt_update" layoutX="213.0" layoutY="437.0" onAction="#onUpdateAction" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="bt_new" layoutX="31.0" layoutY="437.0" onAction="#onbtnewAction" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #3498db;" text="New" textFill="WHITE" />
    </children>
 </AnchorPane>

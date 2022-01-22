@@ -41,10 +41,10 @@
          </toggleGroup>
       </JFXRadioButton>
       <JFXRadioButton fx:id="rdo_female" layoutX="238.0" layoutY="258.0" text="Female" toggleGroup="$gender" />
-      <JFXButton fx:id="bt_add" layoutX="163.0" layoutY="596.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #273a91;" text="Add" textFill="#fffafa" />
-      <JFXButton fx:id="bt_update" layoutX="254.0" layoutY="596.0" onAction="#onUpdateAction" style="-fx-background-color: #273a91;" text="Update" textFill="WHITE" />
-      <JFXButton fx:id="bt_new" layoutX="67.0" layoutY="596.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #273a91;" text="New" textFill="#eeebeb" />
-      <JFXButton fx:id="bt_search" layoutX="268.0" layoutY="94.0" onAction="#onBtSearchAction" style="-fx-background-color: #273a91;" text="Search" textFill="WHITE" />
+      <JFXButton fx:id="bt_add" layoutX="163.0" layoutY="596.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #3498db;" text="Add" textFill="#fffafa" />
+      <JFXButton fx:id="bt_update" layoutX="254.0" layoutY="596.0" onAction="#onUpdateAction" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
+      <JFXButton fx:id="bt_new" layoutX="67.0" layoutY="596.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="New" textFill="#eeebeb" />
+      <JFXButton fx:id="bt_search" layoutX="268.0" layoutY="94.0" onAction="#onBtSearchAction" style="-fx-background-color: #3498db;" text="Search" textFill="WHITE" />
       <JFXTextField fx:id="tf_expired_date" layoutX="122.0" layoutY="466.0" prefHeight="27.0" prefWidth="201.0" promptText="00/00/0000" />
    </children>
 </AnchorPane>
