@@ -3,39 +3,103 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminCashierController">
    <children>
-      <TableView fx:id="tb_cashier" layoutX="319.0" layoutY="45.0" prefHeight="609.0" prefWidth="974.0" />
-      <Label layoutX="31.0" layoutY="158.0" text="ID" />
-      <Label layoutX="31.0" layoutY="199.0" text="Name" />
-      <Label layoutX="31.0" layoutY="240.0" text="Age" />
-      <Label layoutX="31.0" layoutY="283.0" text="Gender" />
-      <Label layoutX="31.0" layoutY="327.0" text="Address" />
-      <Label layoutX="31.0" layoutY="368.0" text="Phone" />
-      <Label layoutX="31.0" layoutY="412.0" text="Email" />
-      <Label layoutX="31.0" layoutY="458.0" text="Password" />
-      <Label layoutX="536.0" layoutY="6.0" style="-fx-font-size: 30;" text="Manage Cashier" />
-      <JFXTextField fx:id="tf_id" layoutX="115.0" layoutY="145.0" prefHeight="27.0" prefWidth="197.0" promptText="11001" />
-      <JFXTextField fx:id="tf_name" layoutX="113.0" layoutY="187.0" prefHeight="27.0" prefWidth="197.0" promptText="Alex" />
-      <JFXTextField fx:id="tf_age" layoutX="113.0" layoutY="230.0" prefHeight="27.0" prefWidth="197.0" promptText="18" />
-      <JFXRadioButton fx:id="rdo_male" layoutX="113.0" layoutY="283.0" selected="true" text="Male">
+      <AnchorPane layoutY="28.0" prefHeight="59.0" prefWidth="1300.0">
+         <children>
+            <Label layoutX="24.0" layoutY="-10.0" prefHeight="48.0" prefWidth="238.0" text="Manage Cashier" textFill="#34495e" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="-10.0">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Separator layoutX="250.0" layoutY="8.0" prefHeight="21.0" prefWidth="1022.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="8.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="bt_new" buttonType="RAISED" layoutX="20.0" layoutY="543.0" onAction="#onbtNewAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #27ae60;" text="New" textFill="WHITE" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="bt_cashier_add" buttonType="RAISED" layoutX="20.0" layoutY="574.0" onAction="#onBtAddAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085 #16a085;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="tf_id" labelFloat="true" layoutX="23.0" layoutY="76.0" prefHeight="30.0" prefWidth="259.0" promptText="ID" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="76.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_name" labelFloat="true" layoutX="23.0" layoutY="130.0" prefHeight="30.0" prefWidth="259.0" promptText="Name" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_age" labelFloat="true" layoutX="23.0" layoutY="184.0" prefHeight="27.0" prefWidth="259.0" promptText="Age" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="184.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXRadioButton fx:id="rdo_male" layoutX="88.0" layoutY="228.0" selected="true" text="Male" AnchorPane.leftAnchor="88.0" AnchorPane.topAnchor="228.0">
          <toggleGroup>
             <ToggleGroup fx:id="gender" />
-         </toggleGroup></JFXRadioButton>
-      <JFXRadioButton fx:id="rdo_female" layoutX="191.0" layoutY="283.0" text="Female" toggleGroup="$gender" />
-      <JFXTextField fx:id="tf_addr" layoutX="111.0" layoutY="313.0" prefHeight="27.0" prefWidth="197.0" promptText="Mandalay" />
-      <JFXTextField fx:id="tf_phone" layoutX="109.0" layoutY="355.0" prefHeight="27.0" prefWidth="197.0" promptText="097979537858" />
-      <JFXTextField fx:id="tf_email" layoutX="109.0" layoutY="399.0" prefHeight="27.0" prefWidth="197.0" promptText="example@mail.com" />
-      <JFXTextField fx:id="tf_password" layoutX="109.0" layoutY="444.0" prefHeight="27.0" prefWidth="197.0" promptText="cashier" />
-      <Label layoutX="20.0" layoutY="500.0" text="Date Created" />
-      <JFXTextField fx:id="tf_date_created" layoutX="109.0" layoutY="488.0" prefHeight="27.0" prefWidth="197.0" promptText="00/00/0000" />
-      <JFXButton fx:id="bt_new" layoutX="26.0" layoutY="564.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="New" textFill="WHITE" />
-      <JFXButton fx:id="bt_cashier_add" layoutX="133.0" layoutY="564.0" onAction="#onBtAddAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="Add" textFill="WHITE" />
-      <JFXButton fx:id="bt_cashier_update" layoutX="247.0" layoutY="564.0" onAction="#onbtUpdateAction" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="rdo_female" layoutX="175.0" layoutY="228.0" text="Female" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="228.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXTextField fx:id="tf_addr" labelFloat="true" layoutX="23.0" layoutY="268.0" prefHeight="30.0" prefWidth="259.0" promptText="Address" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="268.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_phone" labelFloat="true" layoutX="23.0" layoutY="319.0" prefHeight="30.0" prefWidth="259.0" promptText="Phone" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="319.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_email" labelFloat="true" layoutX="23.0" layoutY="374.0" prefHeight="30.0" prefWidth="259.0" promptText="E-mail" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="374.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_password" labelFloat="true" layoutX="23.0" layoutY="431.0" prefHeight="30.0" prefWidth="259.0" promptText="Password" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="431.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_date_created" labelFloat="true" layoutX="23.0" layoutY="489.0" prefHeight="30.0" prefWidth="259.0" promptText="Data Created" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="489.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="23.0" layoutY="228.0" text="Gender" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="228.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="bt_cashier_update" buttonType="RAISED" layoutX="20.0" layoutY="605.0" onAction="#onbtUpdateAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="300.0" layoutY="76.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="25.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="76.0" />
+      <TableView fx:id="tb_cashier" layoutX="329.0" layoutY="55.0" prefHeight="582.0" prefWidth="950.0" />
    </children>
 </AnchorPane>

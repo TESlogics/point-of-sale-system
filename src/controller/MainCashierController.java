@@ -61,7 +61,8 @@ import net.sf.jasperreports.engine.JRException;
 
 public class MainCashierController {
 
-	@FXML
+    public JFXButton bt_delete_item;
+    @FXML
 	private Label lb_cashier_name;
 
 	@FXML
@@ -257,11 +258,11 @@ public class MainCashierController {
 		col_item_barcode.setMinWidth(220.0);
 		col_item_stock.setMinWidth(90.0);
 
-		col_item_name.setStyle("-fx-font-size: 18");
-		col_item_category.setStyle("-fx-font-size: 18");
-		col_item_price.setStyle("-fx-font-size: 18");
-		col_item_barcode.setStyle("-fx-font-size: 18");
-		col_item_stock.setStyle("-fx-font-size: 18");
+		col_item_name.setStyle("-fx-font-size: 15");
+		col_item_category.setStyle("-fx-font-size: 15");
+		col_item_price.setStyle("-fx-font-size: 15");
+		col_item_barcode.setStyle("-fx-font-size: 15");
+		col_item_stock.setStyle("-fx-font-size: 15");
 
 		col_item_name.setCellValueFactory(new PropertyValueFactory<ProductItem, String>("name"));
 		col_item_category.setCellValueFactory(new PropertyValueFactory<ProductItem, String>("categoryname"));
@@ -280,19 +281,19 @@ public class MainCashierController {
 		col_purchase_discount = new TableColumn<Sale, String>("Discount");
 		col_purchase_totalamount = new TableColumn<Sale, String>("TotalAmount");
 
-		col_purchase_barcode.setMinWidth(120.0);
-		col_purchase_name.setMinWidth(90.0);
+		col_purchase_barcode.setMinWidth(60.0);
+		col_purchase_name.setMinWidth(60.0);
 		col_purchase_price.setMinWidth(60.0);
-		col_purchase_quantity.setMinWidth(25.0);
-		col_purchase_discount.setMinWidth(25.0);
-		col_purchase_totalamount.setMinWidth(120.0);
+		col_purchase_quantity.setMinWidth(40.0);
+		col_purchase_discount.setMinWidth(40.0);
+		col_purchase_totalamount.setMinWidth(60.0);
 
-		col_purchase_barcode.setStyle("-fx-font-size: 15");
-		col_purchase_name.setStyle("-fx-font-size: 15");
-		col_purchase_price.setStyle("-fx-font-size: 15");
-		col_purchase_quantity.setStyle("-fx-font-size: 15");
-		col_purchase_discount.setStyle("-fx-font-size: 15");
-		col_purchase_totalamount.setStyle("-fx-font-size: 15");
+		col_purchase_barcode.setStyle("-fx-font-size: 12");
+		col_purchase_name.setStyle("-fx-font-size: 12");
+		col_purchase_price.setStyle("-fx-font-size: 12");
+		col_purchase_quantity.setStyle("-fx-font-size: 12");
+		col_purchase_discount.setStyle("-fx-font-size: 12");
+		col_purchase_totalamount.setStyle("-fx-font-size: 12");
 
 		Callback<TableColumn<Sale, Integer>, TableCell<Sale, Integer>> cellFactory = (
 				TableColumn<Sale, Integer> param) -> new EditingCell();
@@ -609,6 +610,9 @@ public class MainCashierController {
 		sg.initModality(Modality.APPLICATION_MODAL);
 		sg.show();
 
+	}
+
+	public void onActionDelete(ActionEvent actionEvent) {
 	}
 
 	// for screen transaction from login to admin panel

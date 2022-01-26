@@ -2,31 +2,95 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPromotionController">
    <children>
-      <TableView fx:id="tb_promo" layoutX="325.0" layoutY="36.0" prefHeight="618.0" prefWidth="970.0" />
-      <Label layoutX="517.0" layoutY="-1.0" style="-fx-font-size: 30;" text="Manage Promotion" />
-      <Label layoutX="36.0" layoutY="197.0" text="ID" />
-      <Label layoutX="33.0" layoutY="242.0" text="Promotion Name" />
-      <Label layoutX="31.0" layoutY="293.0" text="Product ID" />
-      <Label layoutX="153.0" layoutY="421.0" style="-fx-font-size: 18;" text="More" />
-      <JFXTextField fx:id="tf_id" layoutX="145.0" layoutY="187.0" prefHeight="27.0" prefWidth="171.0" promptText="10001" />
-      <JFXTextField fx:id="tf_name" layoutX="145.0" layoutY="229.0" prefHeight="27.0" prefWidth="171.0" promptText="Seasonal Promotion" />
-      <JFXTextField fx:id="tf_product_id" layoutX="143.0" layoutY="280.0" onAction="#onProductIDSearch" prefHeight="27.0" prefWidth="171.0" promptText="777 xxx xxx" />
-      <JFXTextField fx:id="tf_percentage" layoutX="142.0" layoutY="377.0" prefHeight="27.0" prefWidth="171.0" promptText="15" />
-      <JFXTextField fx:id="tf_buy" alignment="BOTTOM_RIGHT" layoutX="85.0" layoutY="447.0" prefColumnCount="10" prefHeight="27.0" prefWidth="71.0" promptText="0" />
-      <JFXTextField fx:id="tf_get" alignment="BOTTOM_RIGHT" layoutX="227.0" layoutY="447.0" prefColumnCount="10" prefHeight="27.0" prefWidth="71.0" promptText="0" />
-      <Label layoutX="40.0" layoutY="452.0" text="Buy" />
-      <Label layoutX="179.0" layoutY="452.0" text="Get" />
-      <JFXButton fx:id="bt_add" layoutX="140.0" layoutY="502.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #3498db;" text="Add" textFill="#f8f8f8" />
-      <JFXButton layoutX="230.0" layoutY="502.0" onAction="#onUpdateAction" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
-      <Label layoutX="30.0" layoutY="390.0" text="Percentage" />
-      <JFXTextField fx:id="tf_product_name" layoutX="142.0" layoutY="327.0" prefHeight="27.0" prefWidth="171.0" promptText="Water" />
-      <Label layoutX="22.0" layoutY="346.0" text="Product Name" />
-      <JFXButton fx:id="bt_new" layoutX="46.0" layoutY="502.0" onAction="#onNewAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #3498db;" text="New" textFill="WHITE" />
+      <AnchorPane layoutY="28.0" prefHeight="59.0" prefWidth="1300.0">
+         <children>
+            <Label layoutX="24.0" layoutY="-10.0" prefHeight="48.0" prefWidth="292.0" text="Manage Promotion" textFill="#34495e" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="-10.0">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Separator layoutX="273.0" layoutY="8.0" prefHeight="21.0" prefWidth="999.0" AnchorPane.leftAnchor="273.0" AnchorPane.topAnchor="8.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="bt_new" buttonType="RAISED" layoutX="22.0" layoutY="545.0" onAction="#onNewAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #27ae60;" text="New" textFill="WHITE" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="bt_add" buttonType="RAISED" layoutX="22.0" layoutY="576.0" onAction="#onAddAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085 #16a085;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="bt_update" buttonType="RAISED" layoutX="22.0" layoutY="607.0" onAction="#onUpdateAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="300.0" layoutY="76.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="25.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="76.0" />
+      <JFXTextField fx:id="tf_id" labelFloat="true" layoutX="25.0" layoutY="74.0" prefHeight="30.0" prefWidth="259.0" promptText="ID" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="74.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_name" labelFloat="true" layoutX="25.0" layoutY="126.0" prefHeight="30.0" prefWidth="259.0" promptText="Promotion Name" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="126.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_product_id" labelFloat="true" layoutX="23.0" layoutY="180.0" onAction="#onProductIDSearch" prefHeight="30.0" prefWidth="259.0" promptText="Product ID" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_percentage" labelFloat="true" layoutX="22.0" layoutY="281.0" prefHeight="30.0" prefWidth="259.0" promptText="Percentage" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="281.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_product_name" labelFloat="true" layoutX="22.0" layoutY="231.0" prefHeight="30.0" prefWidth="259.0" promptText="Product Name" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="231.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_buy" alignment="BOTTOM_RIGHT" layoutX="68.0" layoutY="356.0" prefColumnCount="10" prefHeight="27.0" prefWidth="71.0" promptText="0" AnchorPane.leftAnchor="68.0" AnchorPane.topAnchor="356.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_get" alignment="BOTTOM_RIGHT" layoutX="210.0" layoutY="356.0" prefColumnCount="10" prefHeight="27.0" prefWidth="71.0" promptText="0" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="356.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="23.0" layoutY="361.0" text="Buy" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="361.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="361.0" text="Get" AnchorPane.leftAnchor="162.0" AnchorPane.topAnchor="361.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="331.0" text="More" AnchorPane.leftAnchor="129.0" AnchorPane.topAnchor="331.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tb_promo" layoutX="327.0" layoutY="63.0" prefHeight="573.0" prefWidth="954.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
    </children>
 </AnchorPane>

@@ -3,48 +3,74 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminCustomerController">
    <children>
-      <TableView fx:id="tb_customer" layoutX="334.0" layoutY="37.0" prefHeight="609.0" prefWidth="960.0" />
-      <Label layoutX="38.0" layoutY="157.0" text="ID" />
-      <Label layoutX="36.0" layoutY="187.0" text="Name" />
-      <Label layoutX="38.0" layoutY="222.0" text="Age" />
-      <Label layoutX="37.0" layoutY="258.0" text="Gender" />
-      <Label layoutX="35.0" layoutY="294.0" text="Address" />
-      <Label layoutX="35.0" layoutY="331.0" text="Phone" />
-      <Label layoutX="34.0" layoutY="368.0" text="Email" />
-      <Label layoutX="521.0" layoutY="2.0" style="-fx-font-size: 30;" text="Manage Customer" />
-      <Label layoutX="33.0" layoutY="400.0" text="Amount" />
-      <Label layoutX="22.0" layoutY="438.0" text="Last Date Used" />
-      <Label layoutX="28.0" layoutY="477.0" text="Expired Date" />
-      <Label layoutX="28.0" layoutY="514.0" text="Date Created" />
-      <Label layoutX="36.0" layoutY="552.0" text="PIN" />
-      <JFXTextField fx:id="tf_id" layoutX="125.0" layoutY="148.0" prefHeight="27.0" prefWidth="201.0" promptText="11001" />
-      <JFXTextField fx:id="tf_name" layoutX="126.0" layoutY="181.0" prefHeight="27.0" prefWidth="201.0" promptText="Alex" />
-      <JFXTextField fx:id="tf_age" layoutX="125.0" layoutY="216.0" prefHeight="27.0" prefWidth="201.0" promptText="13" />
-      <JFXTextField fx:id="tf_addr" layoutX="125.0" layoutY="281.0" prefHeight="27.0" prefWidth="201.0" promptText="Mandalay" />
-      <JFXTextField fx:id="tf_phone" layoutX="124.0" layoutY="319.0" prefHeight="27.0" prefWidth="201.0" promptText="09123463033" />
-      <JFXTextField fx:id="tf_mail" layoutX="123.0" layoutY="355.0" prefHeight="27.0" prefWidth="201.0" promptText="example@mail.com" />
-      <JFXTextField fx:id="tf_card_no" layoutX="26.0" layoutY="94.0" prefHeight="27.0" prefWidth="241.0" promptText="Enter Card Number" />
-      <JFXTextField fx:id="tf_amount" layoutX="121.0" layoutY="393.0" prefHeight="27.0" prefWidth="201.0" promptText="50000" />
-      <JFXTextField fx:id="tf_last_date_used" layoutX="121.0" layoutY="428.0" prefHeight="27.0" prefWidth="201.0" promptText="00/00/0000" />
-      <JFXTextField fx:id="tf_pin" layoutX="117.0" layoutY="545.0" prefHeight="27.0" prefWidth="201.0" promptText="1234" />
-      <JFXTextField fx:id="tf_date_created" editable="false" layoutX="120.0" layoutY="507.0" prefHeight="27.0" prefWidth="201.0" promptText="00/00/0000" />
-      <JFXRadioButton fx:id="rdo_male" layoutX="134.0" layoutY="258.0" selected="true" text="Male">
+      <AnchorPane layoutY="28.0" prefHeight="59.0" prefWidth="1300.0">
+         <children>
+            <Label layoutX="24.0" layoutY="-10.0" prefHeight="48.0" prefWidth="238.0" text="Manage Customer" textFill="#34495e" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="-10.0">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Separator layoutX="263.0" layoutY="8.0" prefHeight="21.0" prefWidth="1009.0" AnchorPane.leftAnchor="263.0" AnchorPane.topAnchor="8.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="bt_new" buttonType="RAISED" layoutX="22.0" layoutY="541.0" onAction="#onbtNewAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #27ae60;" text="New" textFill="WHITE" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="bt_add" buttonType="RAISED" layoutX="22.0" layoutY="572.0" onAction="#onAddAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085 #16a085;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="bt_update" buttonType="RAISED" layoutX="22.0" layoutY="603.0" onAction="#onUpdateAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="300.0" layoutY="76.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="25.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="76.0" />
+      <JFXTextField fx:id="tf_card_no" layoutX="20.0" layoutY="71.0" prefHeight="27.0" prefWidth="209.0" promptText="Enter Card Number" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="71.0" />
+      <JFXButton fx:id="bt_search" buttonType="RAISED" layoutX="248.0" layoutY="75.0" onAction="#onBtSearchAction" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #27ae60;" text="Search" textFill="WHITE" AnchorPane.leftAnchor="248.0" AnchorPane.topAnchor="75.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="tf_id" layoutX="22.0" layoutY="113.0" prefHeight="27.0" prefWidth="273.0" promptText="ID" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="113.0" />
+      <JFXTextField fx:id="tf_name" layoutX="22.0" layoutY="146.0" prefHeight="27.0" prefWidth="273.0" promptText="Name" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="146.0" />
+      <JFXTextField fx:id="tf_age" layoutX="22.0" layoutY="182.0" prefHeight="27.0" prefWidth="273.0" promptText="Age" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="182.0" />
+      <JFXTextField fx:id="tf_addr" layoutX="22.0" layoutY="246.0" prefHeight="27.0" prefWidth="201.0" promptText="Address" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="246.0" />
+      <JFXTextField fx:id="tf_phone" layoutX="22.0" layoutY="282.0" prefHeight="27.0" prefWidth="201.0" promptText="Phone" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="282.0" />
+      <JFXTextField fx:id="tf_mail" layoutX="22.0" layoutY="317.0" prefHeight="27.0" prefWidth="201.0" promptText="E-mail" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="317.0" />
+      <JFXTextField fx:id="tf_amount" layoutX="22.0" layoutY="354.0" prefHeight="27.0" prefWidth="201.0" promptText="Amount" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="354.0" />
+      <JFXTextField fx:id="tf_last_date_used" layoutX="22.0" layoutY="393.0" prefHeight="27.0" prefWidth="201.0" promptText="Last Date Used" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="393.0" />
+      <JFXTextField fx:id="tf_pin" layoutX="22.0" layoutY="505.0" prefHeight="27.0" prefWidth="201.0" promptText="PIN" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="505.0" />
+      <JFXTextField fx:id="tf_date_created" editable="false" layoutX="22.0" layoutY="469.0" prefHeight="27.0" prefWidth="201.0" promptText="Date Created" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="469.0" />
+      <JFXRadioButton fx:id="rdo_male" layoutX="84.0" layoutY="222.0" selected="true" text="Male" AnchorPane.topAnchor="222.0">
          <toggleGroup>
             <ToggleGroup fx:id="gender" />
          </toggleGroup>
       </JFXRadioButton>
-      <JFXRadioButton fx:id="rdo_female" layoutX="238.0" layoutY="258.0" text="Female" toggleGroup="$gender" />
-      <JFXButton fx:id="bt_add" layoutX="163.0" layoutY="596.0" onAction="#onAddAction" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #3498db;" text="Add" textFill="#fffafa" />
-      <JFXButton fx:id="bt_update" layoutX="254.0" layoutY="596.0" onAction="#onUpdateAction" style="-fx-background-color: #3498db;" text="Update" textFill="WHITE" />
-      <JFXButton fx:id="bt_new" layoutX="67.0" layoutY="596.0" onAction="#onbtNewAction" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #3498db;" text="New" textFill="#eeebeb" />
-      <JFXButton fx:id="bt_search" layoutX="268.0" layoutY="94.0" onAction="#onBtSearchAction" style="-fx-background-color: #3498db;" text="Search" textFill="WHITE" />
-      <JFXTextField fx:id="tf_expired_date" layoutX="122.0" layoutY="466.0" prefHeight="27.0" prefWidth="201.0" promptText="00/00/0000" />
+      <JFXRadioButton fx:id="rdo_female" layoutX="159.0" layoutY="222.0" text="Female" AnchorPane.leftAnchor="159.0" AnchorPane.topAnchor="222.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXTextField fx:id="tf_expired_date" layoutX="22.0" layoutY="431.0" prefHeight="27.0" prefWidth="201.0" promptText="Expired date" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="431.0" />
+      <Label layoutX="22.0" layoutY="222.0" text="Gender" />
+      <TableView fx:id="tb_customer" layoutX="325.0" layoutY="65.0" prefHeight="568.0" prefWidth="960.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
    </children>
 </AnchorPane>
