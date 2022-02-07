@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminImeController">
+   <children>
+      <AnchorPane layoutY="28.0" prefHeight="59.0" prefWidth="1300.0">
+         <children>
+            <Label layoutX="24.0" layoutY="-10.0" prefHeight="48.0" prefWidth="238.0" text="IME Number" textFill="#34495e" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="-10.0">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <Separator layoutX="250.0" layoutY="8.0" prefHeight="21.0" prefWidth="1073.0" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="8.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="bt_new" buttonType="RAISED" layoutX="20.0" layoutY="543.0" onAction="#onbtNewAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #27ae60;" text="New" textFill="WHITE" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="bt_ime_add" buttonType="RAISED" layoutX="20.0" layoutY="574.0" onAction="#onBtAddAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085 #16a085;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="tf_mobile_brand" labelFloat="true" layoutX="23.0" layoutY="76.0" prefHeight="30.0" prefWidth="259.0" promptText="Mobile Brand" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="76.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_ime_number" labelFloat="true" layoutX="23.0" layoutY="130.0" prefHeight="30.0" prefWidth="259.0" promptText="IME" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_color" labelFloat="true" layoutX="23.0" layoutY="184.0" prefHeight="27.0" prefWidth="259.0" promptText="Color" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="184.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_ram" labelFloat="true" layoutX="23.0" layoutY="239.0" prefHeight="30.0" prefWidth="259.0" promptText="Ram" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="239.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tf_rom" labelFloat="true" layoutX="23.0" layoutY="290.0" prefHeight="30.0" prefWidth="259.0" promptText="Rom" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="290.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="bt_ime_update" buttonType="RAISED" layoutX="20.0" layoutY="605.0" onAction="#onbtUpdateAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="300.0" layoutY="76.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="25.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="76.0" />
+      <TableView fx:id="tb_ime" layoutX="329.0" layoutY="55.0" prefHeight="582.0" prefWidth="950.0" />
+   </children>
+</AnchorPane>
