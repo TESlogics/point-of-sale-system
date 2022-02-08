@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import model.Ime;
 
 public class AdminImeController {
@@ -43,40 +44,40 @@ public class AdminImeController {
 		assert tf_rom != null : "fx:id=\"tf_rom\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert bt_new != null : "fx:id=\"bt_new\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 
-		col_ime_number = new TableColumn<Ime, String>("IME Number");
 		col_mobile_brand = new TableColumn<Ime, String>("Mobile Brand");
 		col_color = new TableColumn<Ime, String>("Color");
 		col_ram = new TableColumn<Ime, String>("Ram");
 		col_rom = new TableColumn<Ime, String>("Rom");
+		col_ime_number = new TableColumn<Ime, String>("Mobile Number");
 
-		col_ime_number.setMinWidth(90.0);
 		col_mobile_brand.setMinWidth(180.0);
 		col_color.setMinWidth(50.0);
 		col_ram.setMinWidth(70.0);
 		col_rom.setMinWidth(230.0);
+		col_ime_number.setMinWidth(90.0);
 
-		col_ime_number.setStyle("-fx-font-size: 18");
 		col_mobile_brand.setStyle("-fx-font-size: 18");
 		col_color.setStyle("-fx-font-size: 18");
 		col_ram.setStyle("-fx-font-size: 18");
 		col_rom.setStyle("-fx-font-size: 18");
+		col_ime_number.setStyle("-fx-font-size: 18");
 
-/*		col_ime_number.setCellValueFactory(
-				new PropertyValueFactory<Cashier, String>("ime"));
 		col_mobile_brand.setCellValueFactory(
-				new PropertyValueFactory<Cashier, String>("mobileBrand"));
+				new PropertyValueFactory<Ime, String>("mobileBrand"));
 		col_color.setCellValueFactory(
-				new PropertyValueFactory<Cashier, String>("color"));
+				new PropertyValueFactory<Ime, String>("color"));
 		col_ram.setCellValueFactory(
-				new PropertyValueFactory<Cashier, String>("ram"));
+				new PropertyValueFactory<Ime, String>("ram"));
 		col_rom.setCellValueFactory(
-				new PropertyValueFactory<Cashier, String>("rom"));*/
+				new PropertyValueFactory<Ime, String>("rom"));
+		col_ime_number.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("mobile Number"));
 
-		/*tb_ime.getColumns().addAll(col_ime_number
-				,col_mobile_brand
+		tb_ime.getColumns().addAll(col_mobile_brand
 				,col_color
 				,col_ram
-				,col_rom);*/
+				,col_rom
+				,col_ime_number);
 
 
 	}

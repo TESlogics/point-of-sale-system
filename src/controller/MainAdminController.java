@@ -164,6 +164,7 @@ public class MainAdminController {
 		bt_logout.setDisable(false);
 		bt_supplier.setDisable(false);
 		bt_card.setDisable(false);
+		bt_ime.setDisable(false);
 	}
 	
 	@FXML
@@ -190,6 +191,7 @@ public class MainAdminController {
 		bt_logout.setDisable(false);
 		bt_supplier.setDisable(false);
 		bt_card.setDisable(false);
+		bt_ime.setDisable(false);
 	}
 	
 	@FXML
@@ -217,6 +219,7 @@ public class MainAdminController {
 		bt_logout.setDisable(false);
 		bt_supplier.setDisable(false);
 		bt_card.setDisable(false);
+		bt_ime.setDisable(false);
 	}
 	
 	@FXML
@@ -244,6 +247,7 @@ public class MainAdminController {
 		bt_logout.setDisable(false);
 		bt_supplier.setDisable(false);
 		bt_card.setDisable(false);
+		bt_ime.setDisable(false);
 	}
 	
 	@FXML
@@ -271,6 +275,7 @@ public class MainAdminController {
 		bt_logout.setDisable(false);
 		bt_supplier.setDisable(false);
 		bt_card.setDisable(false);
+		bt_ime.setDisable(false);
 		
 	}
 	
@@ -299,6 +304,7 @@ public class MainAdminController {
 		bt_category.setDisable(false);
 		bt_logout.setDisable(false);
 		bt_card.setDisable(false);
+		bt_ime.setDisable(false);
     }
 	
 	@FXML
@@ -326,6 +332,7 @@ public class MainAdminController {
 		bt_category.setDisable(false);
 		bt_logout.setDisable(false);
 		bt_card.setDisable(false);
+		bt_ime.setDisable(false);
 	}
 
 	
@@ -355,6 +362,7 @@ public class MainAdminController {
 			bt_category.setDisable(false);
 			bt_logout.setDisable(false);
 			bt_popular.setDisable(false);
+		   	bt_ime.setDisable(false);
 	    }
 	   
 		@FXML
@@ -382,6 +390,7 @@ public class MainAdminController {
 			bt_category.setDisable(false);
 			bt_logout.setDisable(false);
 			bt_popular.setDisable(false);
+			bt_ime.setDisable(false);
 		}
 		
 
@@ -410,6 +419,7 @@ public class MainAdminController {
 			bt_category.setDisable(false);
 			bt_logout.setDisable(false);
 			bt_popular.setDisable(false);
+			bt_ime.setDisable(false);
 
 		}
 		

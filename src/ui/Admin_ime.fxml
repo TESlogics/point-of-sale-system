@@ -13,7 +13,7 @@
    <children>
       <AnchorPane layoutY="28.0" prefHeight="59.0" prefWidth="1300.0">
          <children>
-            <Label layoutX="24.0" layoutY="-10.0" prefHeight="48.0" prefWidth="238.0" text="IME Number" textFill="#34495e" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="-10.0">
+            <Label layoutX="24.0" layoutY="-10.0" prefHeight="48.0" prefWidth="238.0" text="Mobile Number" textFill="#34495e" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="-10.0">
                <font>
                   <Font name="System Bold" size="26.0" />
                </font>
@@ -36,7 +36,7 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="tf_ime_number" labelFloat="true" layoutX="23.0" layoutY="130.0" prefHeight="30.0" prefWidth="259.0" promptText="IME" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="130.0">
+      <JFXTextField fx:id="tf_ime_number" labelFloat="true" layoutX="23.0" layoutY="130.0" prefHeight="30.0" prefWidth="259.0" promptText="Mobile" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="130.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
