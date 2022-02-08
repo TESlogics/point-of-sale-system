@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -18,50 +19,48 @@
                   <Font name="System Bold" size="26.0" />
                </font>
             </Label>
-            <Separator layoutX="250.0" layoutY="8.0" prefHeight="21.0" prefWidth="1073.0" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="8.0" />
+            <Separator layoutX="238.0" layoutY="8.0" prefHeight="21.0" prefWidth="1034.0" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="8.0" />
+            <JFXTextField fx:id="tf_barcode_search" layoutX="710.0" layoutY="29.0" onKeyReleased="#onBarcodeSearchActionn" prefHeight="30.0" prefWidth="368.0" promptText="Search By Barcode">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
          </children>
       </AnchorPane>
-      <JFXButton fx:id="bt_new" buttonType="RAISED" layoutX="20.0" layoutY="543.0" onAction="#onbtNewAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #27ae60;" text="New" textFill="WHITE" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="20.0">
+      <JFXButton fx:id="bt_new" buttonType="RAISED" layoutX="20.0" layoutY="537.0" onAction="#onbtNewAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #27ae60;" text="New" textFill="WHITE" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="20.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="bt_ime_add" buttonType="RAISED" layoutX="20.0" layoutY="574.0" onAction="#onBtAddAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085 #16a085;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="20.0">
+      <JFXButton fx:id="bt_ime_add" buttonType="RAISED" layoutX="20.0" layoutY="571.0" onAction="#onBtAddAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085 #16a085;" text="Add" textFill="WHITE" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="20.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXTextField fx:id="tf_mobile_brand" labelFloat="true" layoutX="23.0" layoutY="76.0" prefHeight="30.0" prefWidth="259.0" promptText="Mobile Brand" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="76.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="tf_ime_number" labelFloat="true" layoutX="23.0" layoutY="130.0" prefHeight="30.0" prefWidth="259.0" promptText="Mobile" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="130.0">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="tf_color" labelFloat="true" layoutX="23.0" layoutY="184.0" prefHeight="27.0" prefWidth="259.0" promptText="Color" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="184.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="tf_ram" labelFloat="true" layoutX="23.0" layoutY="239.0" prefHeight="30.0" prefWidth="259.0" promptText="Ram" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="239.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="tf_rom" labelFloat="true" layoutX="23.0" layoutY="290.0" prefHeight="30.0" prefWidth="259.0" promptText="Rom" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="290.0">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXButton fx:id="bt_ime_update" buttonType="RAISED" layoutX="20.0" layoutY="605.0" onAction="#onbtUpdateAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="20.0">
+      <JFXTextField fx:id="tf_mobile_brand" layoutX="23.0" layoutY="62.0" prefHeight="30.0" prefWidth="259.0" promptText="Mobile Brand" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="62.0" />
+      <JFXTextField fx:id="tf_ime_number" layoutX="23.0" layoutY="104.0" prefHeight="30.0" prefWidth="259.0" promptText="Mobile" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="104.0" />
+      <JFXTextField fx:id="tf_color" layoutX="23.0" layoutY="184.0" prefHeight="27.0" prefWidth="259.0" promptText="Color" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="184.0" />
+      <JFXTextField fx:id="tf_ram" layoutX="23.0" layoutY="223.0" prefHeight="30.0" prefWidth="259.0" promptText="Ram" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="223.0" />
+      <JFXTextField fx:id="tf_rom" layoutX="23.0" layoutY="265.0" prefHeight="30.0" prefWidth="259.0" promptText="Rom" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="265.0" />
+      <JFXButton fx:id="bt_ime_update" buttonType="RAISED" layoutX="20.0" layoutY="604.0" onAction="#onbtUpdateAction" prefHeight="25.0" prefWidth="259.0" style="-fx-background-color: #16a085;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="20.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
       <Separator layoutX="300.0" layoutY="76.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="25.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="76.0" />
-      <TableView fx:id="tb_ime" layoutX="329.0" layoutY="55.0" prefHeight="582.0" prefWidth="950.0" />
+      <TableView fx:id="tb_ime" layoutX="325.0" layoutY="105.0" prefHeight="529.0" prefWidth="950.0" />
+      <JFXTextField fx:id="tf_barcode" editable="true" layoutX="23.0" layoutY="145.0" prefHeight="27.0" prefWidth="259.0" promptText="Barcode" />
+      <JFXTextField fx:id="tf_price" layoutX="23.0" layoutY="307.0" prefHeight="27.0" prefWidth="259.0" promptText="Price" />
+      <JFXTextField fx:id="tf_date_added" layoutX="22.0" layoutY="442.0" prefHeight="27.0" prefWidth="259.0" promptText="Date Added" />
+      <JFXTextField fx:id="tf_stock" layoutX="22.0" layoutY="481.0" prefHeight="27.0" prefWidth="259.0" promptText="Stock Amount" />
+      <JFXComboBox fx:id="cbo_category" layoutX="126.0" layoutY="356.0" prefHeight="27.0" prefWidth="166.0" promptText="Snack" style="-fx-background-color: #ededed;" />
+      <JFXComboBox fx:id="cbo_supplier" layoutX="124.0" layoutY="396.0" prefHeight="27.0" prefWidth="166.0" style="-fx-background-color: #ededed;" />
+      <Label layoutX="21.0" layoutY="361.0" text="Category Name" />
+      <Label layoutX="21.0" layoutY="401.0" text="Supplier Name" />
+      <JFXTextField fx:id="tf_name_search" labelFloat="true" layoutX="325.0" layoutY="63.0" onKeyReleased="#onNameSearchAction" prefHeight="30.0" prefWidth="368.0" promptText="Search By Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
    </children>
 </AnchorPane>

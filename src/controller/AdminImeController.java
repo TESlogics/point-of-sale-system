@@ -1,13 +1,16 @@
 package controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import model.Ime;
+import model.ProductItem;
 
 public class AdminImeController {
 
@@ -19,6 +22,14 @@ public class AdminImeController {
 	public JFXTextField tf_ram;
 	public JFXTextField tf_rom;
 	public JFXButton bt_ime_update;
+	public JFXTextField tf_barcode;
+	public JFXTextField tf_price;
+	public JFXTextField tf_date_added;
+	public JFXTextField tf_stock;
+	public JFXComboBox cbo_category;
+	public JFXComboBox cbo_supplier;
+	public JFXTextField tf_name_search;
+	public JFXTextField tf_barcode_search;
 
 	@FXML
 	private TableView<Ime> tb_ime;
@@ -26,6 +37,18 @@ public class AdminImeController {
 	private TableColumn<Ime, String> col_ime_number;
 
 	private TableColumn<Ime, String> col_mobile_brand;
+
+	private TableColumn<Ime, String> col_item_barcode;
+
+	private TableColumn<Ime, String> col_item_categroy;
+
+	private TableColumn<Ime, String> col_item_supplier;
+
+	private TableColumn<Ime, String> col_item_dateadded;
+
+	private TableColumn<Ime, String> col_item_stock;
+
+	private TableColumn<Ime, String> col_item_price;
 
 	private TableColumn<Ime, String> col_color;
 
@@ -44,24 +67,44 @@ public class AdminImeController {
 		assert tf_rom != null : "fx:id=\"tf_rom\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert bt_new != null : "fx:id=\"bt_new\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 
+		col_item_barcode = new TableColumn<Ime, String>("Barcode");
 		col_mobile_brand = new TableColumn<Ime, String>("Mobile Brand");
 		col_color = new TableColumn<Ime, String>("Color");
 		col_ram = new TableColumn<Ime, String>("Ram");
 		col_rom = new TableColumn<Ime, String>("Rom");
 		col_ime_number = new TableColumn<Ime, String>("Mobile Number");
+		col_item_categroy = new TableColumn<Ime, String>("Category");
+		col_item_supplier = new TableColumn<Ime, String>("Supplier");
+		col_item_dateadded = new TableColumn<Ime, String>("Date Added");
+		col_item_stock = new TableColumn<Ime, String>("Stock");
+		col_item_price = new TableColumn<Ime, String>("Price");
 
+		col_item_barcode.setMinWidth(180.0);
 		col_mobile_brand.setMinWidth(180.0);
-		col_color.setMinWidth(50.0);
-		col_ram.setMinWidth(70.0);
-		col_rom.setMinWidth(230.0);
-		col_ime_number.setMinWidth(90.0);
+		col_color.setMinWidth(180.0);
+		col_ram.setMinWidth(180.0);
+		col_rom.setMinWidth(180.0);
+		col_ime_number.setMinWidth(180.0);
+		col_item_categroy.setMinWidth(180.0);
+		col_item_supplier.setMinWidth(180.0);
+		col_item_dateadded.setMinWidth(180.0);
+		col_item_stock.setMinWidth(180.0);
+		col_item_price.setMinWidth(180.0);
 
+		col_item_barcode.setStyle("-fx-font-size: 18");
 		col_mobile_brand.setStyle("-fx-font-size: 18");
 		col_color.setStyle("-fx-font-size: 18");
 		col_ram.setStyle("-fx-font-size: 18");
 		col_rom.setStyle("-fx-font-size: 18");
 		col_ime_number.setStyle("-fx-font-size: 18");
+		col_item_categroy.setStyle("-fx-font-size: 18");
+		col_item_supplier.setStyle("-fx-font-size: 18");
+		col_item_dateadded.setStyle("-fx-font-size: 18");
+		col_item_stock.setStyle("-fx-font-size: 18");
+		col_item_price.setStyle("-fx-font-size: 18");
 
+		col_item_barcode.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("barcode"));
 		col_mobile_brand.setCellValueFactory(
 				new PropertyValueFactory<Ime, String>("mobileBrand"));
 		col_color.setCellValueFactory(
@@ -72,14 +115,28 @@ public class AdminImeController {
 				new PropertyValueFactory<Ime, String>("rom"));
 		col_ime_number.setCellValueFactory(
 				new PropertyValueFactory<Ime, String>("mobile Number"));
+		col_item_categroy.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("category"));
+		col_item_supplier.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("supplier"));
+		col_item_dateadded.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("dateAdded"));
+		col_item_stock.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("stock"));
+		col_item_price.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("price"));
 
-		tb_ime.getColumns().addAll(col_mobile_brand
+		tb_ime.getColumns().addAll(col_item_barcode
+				,col_mobile_brand
 				,col_color
 				,col_ram
 				,col_rom
-				,col_ime_number);
-
-
+				,col_ime_number
+				,col_item_categroy
+				,col_item_supplier
+				,col_item_dateadded
+				,col_item_stock
+				,col_item_price);
 	}
 
 	public void onbtUpdateAction(ActionEvent actionEvent) {
@@ -89,5 +146,11 @@ public class AdminImeController {
 	}
 
 	public void onbtNewAction(ActionEvent actionEvent) {
+	}
+
+	public void onBarcodeSearchActionn(KeyEvent keyEvent) {
+	}
+
+	public void onNameSearchAction(KeyEvent keyEvent) {
 	}
 }
