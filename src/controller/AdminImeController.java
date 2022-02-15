@@ -14,22 +14,62 @@ import model.ProductItem;
 
 public class AdminImeController {
 
+	@FXML
 	public JFXButton bt_new;
+
+	@FXML
 	public JFXButton bt_ime_add;
-	public JFXTextField tf_mobile_brand;
+
+	@FXML
 	public JFXTextField tf_ime_number;
+
+	@FXML
 	public JFXTextField tf_color;
+
+	@FXML
 	public JFXTextField tf_ram;
+
+	@FXML
 	public JFXTextField tf_rom;
+
+	@FXML
 	public JFXButton bt_ime_update;
+
+	@FXML
 	public JFXTextField tf_barcode;
+
+	@FXML
 	public JFXTextField tf_price;
+
+	@FXML
 	public JFXTextField tf_date_added;
+
+	@FXML
 	public JFXTextField tf_stock;
+
+	@FXML
 	public JFXComboBox cbo_category;
+
+	@FXML
 	public JFXComboBox cbo_supplier;
+
+	@FXML
 	public JFXTextField tf_name_search;
+
+	@FXML
 	public JFXTextField tf_barcode_search;
+
+	@FXML
+	public JFXComboBox cbo_mobile_brand;
+
+	@FXML
+	public JFXTextField tf_ime;
+
+	@FXML
+	public JFXTextField tf_selling_price;
+
+	@FXML
+	public JFXTextField tf_buying_price;
 
 	@FXML
 	private TableView<Ime> tb_ime;
@@ -56,12 +96,20 @@ public class AdminImeController {
 
 	private TableColumn<Ime, String> col_ram;
 
+	private TableColumn<Ime, String> col_buying_price;
+
+	private TableColumn<Ime, String> col_selling_price;
+
+	@FXML
 	void initialize(){
+		assert cbo_mobile_brand != null : "fx:id=\"cbo_mobile_brand\" was not injected: check your FXML file 'Admin_ime.fxml'.";
+		assert tf_buying_price != null : "fx:id=\"tf_buying_price\" was not injected: check your FXML file 'Admin_ime.fxml'.";
+		assert tf_selling_price != null : "fx:id=\"tf_selling_price\" was not injected: check your FXML file 'Admin_ime.fxml'.";
+		assert tf_ime != null : "fx:id=\"tf_ime\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert tb_ime != null : "fx:id=\"tb_ime\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert bt_ime_add != null : "fx:id=\"bt_ime_add\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert bt_ime_update != null : "fx:id=\"bt_ime_update\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert tf_ime_number != null : "fx:id=\"tf_ime_number\" was not injected: check your FXML file 'Admin_ime.fxml'.";
-		assert tf_mobile_brand != null : "fx:id=\"tf_mobile_brand\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert tf_color != null : "fx:id=\"tf_color\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert tf_ram != null : "fx:id=\"tf_ram\" was not injected: check your FXML file 'Admin_ime.fxml'.";
 		assert tf_rom != null : "fx:id=\"tf_rom\" was not injected: check your FXML file 'Admin_ime.fxml'.";
@@ -69,6 +117,8 @@ public class AdminImeController {
 
 		col_item_barcode = new TableColumn<Ime, String>("Barcode");
 		col_mobile_brand = new TableColumn<Ime, String>("Mobile Brand");
+		col_buying_price = new TableColumn<Ime, String>("Buying Price");
+		col_selling_price = new TableColumn<Ime, String>("Selling Price");
 		col_color = new TableColumn<Ime, String>("Color");
 		col_ram = new TableColumn<Ime, String>("Ram");
 		col_rom = new TableColumn<Ime, String>("Rom");
@@ -80,6 +130,8 @@ public class AdminImeController {
 		col_item_price = new TableColumn<Ime, String>("Price");
 
 		col_item_barcode.setMinWidth(180.0);
+		col_buying_price.setMinWidth(180.0);
+		col_selling_price.setMinWidth(180.0);
 		col_mobile_brand.setMinWidth(180.0);
 		col_color.setMinWidth(180.0);
 		col_ram.setMinWidth(180.0);
@@ -93,6 +145,8 @@ public class AdminImeController {
 
 		col_item_barcode.setStyle("-fx-font-size: 18");
 		col_mobile_brand.setStyle("-fx-font-size: 18");
+		col_buying_price.setStyle("-fx-font-size: 18");
+		col_selling_price.setStyle("-fx-font-size: 18");
 		col_color.setStyle("-fx-font-size: 18");
 		col_ram.setStyle("-fx-font-size: 18");
 		col_rom.setStyle("-fx-font-size: 18");
@@ -107,6 +161,10 @@ public class AdminImeController {
 				new PropertyValueFactory<Ime, String>("barcode"));
 		col_mobile_brand.setCellValueFactory(
 				new PropertyValueFactory<Ime, String>("mobileBrand"));
+		col_buying_price.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("buyingPrice"));
+		col_selling_price.setCellValueFactory(
+				new PropertyValueFactory<Ime, String>("sellingPrice"));
 		col_color.setCellValueFactory(
 				new PropertyValueFactory<Ime, String>("color"));
 		col_ram.setCellValueFactory(
@@ -128,6 +186,8 @@ public class AdminImeController {
 
 		tb_ime.getColumns().addAll(col_item_barcode
 				,col_mobile_brand
+				,col_buying_price
+				,col_selling_price
 				,col_color
 				,col_ram
 				,col_rom

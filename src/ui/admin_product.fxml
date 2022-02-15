@@ -39,13 +39,12 @@
       </JFXButton>
       <Separator layoutX="300.0" layoutY="76.0" orientation="VERTICAL" prefHeight="561.0" prefWidth="25.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="76.0" />
       <JFXTextField fx:id="tf_barcode" editable="true" layoutX="17.0" layoutY="161.0" prefHeight="27.0" prefWidth="280.0" promptText="Barcode" />
-      <JFXTextField fx:id="tf_name" layoutX="14.0" layoutY="207.0" prefHeight="27.0" prefWidth="280.0" promptText="Name" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="207.0" />
-      <JFXTextField fx:id="tf_price" layoutX="17.0" layoutY="288.0" prefHeight="27.0" prefWidth="271.0" promptText="Price" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="288.0" />
-      <JFXTextField fx:id="tf_date_added" layoutX="15.0" layoutY="375.0" prefHeight="27.0" prefWidth="271.0" promptText="Date Added" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="375.0" />
-      <JFXTextField fx:id="tf_stock" layoutX="15.0" layoutY="421.0" prefHeight="27.0" prefWidth="271.0" promptText="Stock Amount" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="421.0" />
-      <JFXTextField fx:id="tf_expired_date" layoutX="17.0" layoutY="466.0" prefHeight="27.0" prefWidth="271.0" promptText="Expire Date" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="466.0" />
+      <JFXTextField fx:id="tf_name" layoutX="17.0" layoutY="207.0" prefHeight="27.0" prefWidth="280.0" promptText="Name" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="207.0" />
+      <JFXTextField fx:id="tf_buying_price" layoutX="17.0" layoutY="288.0" prefHeight="27.0" prefWidth="271.0" promptText="Buying Price" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="288.0" />
+      <JFXTextField fx:id="tf_date_added" layoutX="18.0" layoutY="416.0" prefHeight="27.0" prefWidth="271.0" promptText="Date Added" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="416.0" />
+      <JFXTextField fx:id="tf_stock" layoutX="18.0" layoutY="462.0" prefHeight="27.0" prefWidth="271.0" promptText="Stock Amount" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="462.0" />
       <JFXComboBox fx:id="cbo_category" layoutX="122.0" layoutY="250.0" prefHeight="27.0" prefWidth="166.0" promptText="Snack" style="-fx-background-color: #ededed;" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="250.0" />
-      <JFXComboBox fx:id="cbo_supplier" layoutX="122.0" layoutY="335.0" prefHeight="27.0" prefWidth="166.0" style="-fx-background-color: #ededed;" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="335.0" />
+      <JFXComboBox fx:id="cbo_supplier" layoutX="122.0" layoutY="376.0" prefHeight="27.0" prefWidth="166.0" style="-fx-background-color: #ededed;" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="376.0" />
       <JFXTextField fx:id="tf_name_search" labelFloat="true" layoutX="17.0" layoutY="76.0" onKeyReleased="#onNameSearchAction" prefHeight="27.0" prefWidth="280.0" promptText="Search By Name" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="76.0">
          <font>
             <Font size="14.0" />
@@ -57,11 +56,12 @@
          </font>
       </JFXTextField>
       <Label layoutX="17.0" layoutY="255.0" text="Category Name" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="255.0" />
-      <Label layoutX="19.0" layoutY="340.0" text="Supplier Name" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="340.0" />
+      <Label layoutX="19.0" layoutY="381.0" text="Supplier Name" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="381.0" />
       <TableView fx:id="tb_product_item" layoutX="330.0" layoutY="67.0" prefHeight="574.0" prefWidth="954.0">
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
+      <JFXTextField fx:id="tf_selling_price" layoutX="17.0" layoutY="334.0" prefHeight="27.0" prefWidth="271.0" promptText="Selling Price" />
    </children>
 </AnchorPane>

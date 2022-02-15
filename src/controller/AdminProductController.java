@@ -34,6 +34,12 @@ import model.ProductItem;
 public class AdminProductController {
 
 	@FXML
+    public JFXTextField tf_buying_price;
+
+	@FXML
+	public JFXTextField tf_selling_price;
+
+	@FXML
 	private ResourceBundle resources;
 
 	@FXML
@@ -115,7 +121,8 @@ public class AdminProductController {
 		assert tb_product_item != null : "fx:id=\"tb_product_item\" was not injected: check your FXML file 'admin_product.fxml'.";
 		assert tf_barcode != null : "fx:id=\"tf_barcode\" was not injected: check your FXML file 'admin_product.fxml'.";
 		assert tf_name != null : "fx:id=\"tf_name\" was not injected: check your FXML file 'admin_product.fxml'.";
-		assert tf_price != null : "fx:id=\"tf_price\" was not injected: check your FXML file 'admin_product.fxml'.";
+		assert tf_buying_price != null : "fx:id=\"tf_buying_price\" was not injected: check your FXML file 'admin_product.fxml'.";
+		assert tf_selling_price != null : "fx:id=\"tf_selling_price\" was not injected: check your FXML file 'admin_product.fxml'.";
 		assert tf_date_added != null : "fx:id=\"tf_date_added\" was not injected: check your FXML file 'admin_product.fxml'.";
 		assert tf_stock != null : "fx:id=\"tf_stock\" was not injected: check your FXML file 'admin_product.fxml'.";
 		assert tf_expired_date != null : "fx:id=\"tf_expired_date\" was not injected: check your FXML file 'admin_product.fxml'.";
