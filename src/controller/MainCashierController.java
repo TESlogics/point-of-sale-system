@@ -62,7 +62,8 @@ import net.sf.jasperreports.engine.JRException;
 public class MainCashierController {
 
     public JFXButton bt_delete_item;
-    @FXML
+	public JFXButton btnMobile;
+	@FXML
 	private Label lb_cashier_name;
 
 	@FXML
@@ -172,6 +173,7 @@ public class MainCashierController {
 
 		assert lb_cashier_name != null : "fx:id=\"lb_cashier_name\" was not injected: check your FXML file 'cashier_main.fxml'.";
 		assert bt_logout != null : "fx:id=\"bt_logout\" was not injected: check your FXML file 'cashier_main.fxml'.";
+		assert btnMobile != null : "fx:id=\"btnMobile\" was not injected: check your FXML file 'cashier_main.fxml'.";
 		assert tf_barcode_search != null : "fx:id=\"tf_barcode_search\" was not injected: check your FXML file 'cashier_main.fxml'.";
 		assert tf_name_search != null : "fx:id=\"tf_name_search\" was not injected: check your FXML file 'cashier_main.fxml'.";
 		assert bt_new != null : "fx:id=\"bt_barcode_scan\" was not injected: check your FXML file 'cashier_main.fxml'.";
@@ -613,6 +615,15 @@ public class MainCashierController {
 	}
 
 	public void onActionDelete(ActionEvent actionEvent) {
+	}
+
+	public void btnMobileOnAction(ActionEvent actionEvent) throws IOException {
+		URL resource = getClass().getResource("/ui/CashierMobileForm.fxml");
+		Parent load = FXMLLoader.load(resource);
+		Scene scene = new Scene(load);
+		Stage primaryStage =  new Stage();
+		primaryStage.setScene(scene);
+		primaryStage.show();
 	}
 
 	// for screen transaction from login to admin panel
